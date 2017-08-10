@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/info')
 def index():
 
-    url = 'http://app:5000/device'
+    url = 'http://10.87.88.101:5000/device'
     headers = {"Content-Type": "application/json"}
 
     try:
@@ -29,4 +29,4 @@ def index():
         pass
 
 
-app.run(debug=False, host='0.0.0.0', port=80)
+app.run(debug=False, host='0.0.0.0', port=8080)
