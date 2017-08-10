@@ -1,6 +1,6 @@
 FROM python:2.7-alpine
 MAINTAINER Justin Barksdale "jusbarks@cisco.com"
-EXPOSE 8080
+EXPOSE 80
 ADD . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
