@@ -3,9 +3,7 @@ from flask import Flask
 from flask import render_template
 import requests
 import json
-import os
 
-chive_app = os.environ['CHIVE_APP']
 
 app = Flask(__name__)
 
@@ -14,7 +12,7 @@ app = Flask(__name__)
 @app.route('/info')
 def index():
 
-    url = 'http://' + chive_app + '/device'
+    url = 'http://app/device'
     headers = {"Content-Type": "application/json"}
 
     try:
