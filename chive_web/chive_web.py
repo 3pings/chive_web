@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/info')
 def index():
 
-    url = 'http://10.87.88.101:5000/device'
+    url = 'http://app:5000/device'
     headers = {"Content-Type": "application/json"}
 
     try:
